@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.8)
+project(mm_mult VERSION 0.1.0 LANGUAGES CXX)
+add_executable(mm_mult mm_multiplication.cpp Matrix.h)
+target_compile_features(mm_mult PUBLIC cxx_std_17)
+set (CMAKE_CXX_FLAGS "-O0")
